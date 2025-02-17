@@ -1,1 +1,1 @@
-print("Welcome to the Mlops World")
+print("Welcome to the Mlops")
