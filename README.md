@@ -192,6 +192,9 @@ git branch --all
 git clone <url> <dir-name>
 git clone https://github.com/manifoldailearning/git4mlops.git my-folder
 cd my-folder
+git credential -osxkeychain erase
+host=github.com
+protocol=https
 git branch --all
 git checkout -b unit-test
 git push -u origin unit-test
@@ -201,3 +204,12 @@ git branch -d unit-test
 git push origin -d unit-test
 git branch --all
 ```
+'''
+Blockers:
+1.I tried to switch back to main from develop but Im getting 
+"error: Your local changes to the following files would be overwritten by checkout:
+        .DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting"
+2. What is difference between checkout and switch
+'''
